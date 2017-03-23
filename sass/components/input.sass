@@ -1,0 +1,36 @@
+.input-field
+  width: 100%
+  position: relative
+
+  &:not(:last-child)
+    margin-bottom: 25px
+
+  label
+    position: absolute
+    font-size: 18px
+    color: #c4c5c7
+    top: 10px
+    left: 5px
+    pointer-events: none
+    transition: all .3s
+
+  input
+    background-color: transparent
+    border-bottom: 1px solid #fff
+    font-size: 18px
+    color: #fff
+    height: 40px
+    padding: 10px 5px
+    width: 100%
+    box-sizing: border-box
+    transition: all .3s
+
+    &:focus,
+    &:valid
+      border-color: $light-blue
+
+      & + label
+        color: $light-blue
+        top: -10px
+        font-size: 14px
+

@@ -1,0 +1,219 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "HNCyr", "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a, a:hover, a:focus, a:active {
+    outline: none; }
+
+button {
+  border: none; }
+  button:focus {
+    outline: 0; }
+
+input,
+textarea {
+  border: none; }
+  input:focus,
+  textarea:focus {
+    outline: 0; }
+
+input,
+textarea,
+button {
+  font-family: "HNCyr", "Helvetica Neue", Helvetica, sans-serif; }
+
+@font-face {
+  font-family: 'HNCyr';
+  src: url("/fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HNCyr';
+  src: url("/fonts/HelveticaNeueCyr-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HNCyr';
+  src: url("/fonts/HelveticaNeueCyr-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HNCyr';
+  src: url("/fonts/HelveticaNeueCyr-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal; }
+
+.hide {
+  display: none !important; }
+
+body {
+  background-color: #ECF0F1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media screen and (min-width: 768px) {
+    body {
+      -ms-flex-align: center;
+          align-items: center; } }
+  body #wrapper {
+    min-width: 320px;
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    min-height: 480px;
+    position: relative; }
+
+.block-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px; }
+  .block-footer p {
+    margin: 0 0 5px;
+    color: #fff; }
+  .block-footer a {
+    font-weight: bold;
+    color: #07a0a5; }
+
+.input-field {
+  width: 100%;
+  position: relative; }
+  .input-field:not(:last-child) {
+    margin-bottom: 25px; }
+  .input-field label {
+    position: absolute;
+    font-size: 18px;
+    color: #c4c5c7;
+    top: 10px;
+    left: 5px;
+    pointer-events: none;
+    transition: all .3s; }
+  .input-field input {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    padding: 10px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all .3s; }
+    .input-field input:focus, .input-field input:valid {
+      border-color: #07a0a5; }
+      .input-field input:focus + label, .input-field input:valid + label {
+        color: #07a0a5;
+        top: -10px;
+        font-size: 14px; }
+
+.btn {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 44px;
+  height: 44px;
+  color: #fff;
+  margin: 20px 0 0;
+  font-weight: 300;
+  text-align: center; }
+  .btn:hover {
+    cursor: pointer; }
+  .btn-light {
+    background-color: #07a0a5; }
+  .btn-blue {
+    background-color: #2761cb; }
+  .btn-red {
+    background-color: #da3726; }
+
+#sign-in_block {
+  padding: 20px;
+  background-color: #495056;
+  box-sizing: border-box;
+  min-height: 480px; }
+  #sign-in_block h1,
+  #sign-in_block h2 {
+    text-align: center;
+    color: #07a0a5;
+    font-weight: normal; }
+  #sign-in_block h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 40px 0 15px; }
+  #sign-in_block h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 60px; }
+  #sign-in_block button {
+    margin-top: 50px;
+    font-weight: 500; }
+
+#sign-up_block {
+  padding: 20px;
+  background-color: #495056;
+  box-sizing: border-box;
+  min-height: 480px; }
+  #sign-up_block .separator {
+    position: relative;
+    margin: 40px 0 15px;
+    text-align: center; }
+    #sign-up_block .separator > div {
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #808589;
+      z-index: 1; }
+    #sign-up_block .separator p {
+      font-size: 14px;
+      margin: 0;
+      display: inline-block;
+      color: #808589;
+      position: relative;
+      z-index: 2;
+      background-color: #495056;
+      padding: 0 15px; }
+  #sign-up_block button {
+    margin-top: 50px;
+    font-weight: 500; }
+
+#success_block {
+  background-color: #07a0a5;
+  min-height: 480px;
+  text-align: center;
+  padding-top: 186px;
+  box-sizing: border-box; }
+  #success_block .check {
+    position: relative;
+    display: inline-block; }
+    #success_block .check-cover {
+      background-color: #07a0a5;
+      width: 89px;
+      height: 62px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: auto;
+      transition: all .5s ease; }
+    #success_block .check:not(.animate) .check-cover {
+      left: 89px; }
+  #success_block h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff; }

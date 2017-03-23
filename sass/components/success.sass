@@ -1,0 +1,29 @@
+#success_block
+  background-color: $light-blue
+  min-height: 480px
+  text-align: center
+  padding-top: 186px
+  box-sizing: border-box
+
+  .check
+    position: relative
+    display: inline-block
+
+    &-cover
+      background-color: $light-blue
+      width: 89px
+      height: 62px
+      position: absolute
+      top: 0
+      left: 0
+      margin: auto
+      transition: all .5s ease
+
+    &:not(.animate)
+      .check-cover
+        left: 89px
+
+  h2
+    font-size: 30px
+    font-weight: 300
+    color: #fff

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ultimate Guitar test</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  
+  <!-- wrapper -->
+  <div id="wrapper">
+
+    <!-- sign-in_block -->
+    <div id="sign-in_block">
+      <h1>Rainy</h1>
+      <h2>cloud client for iOS</h2>
+
+      <form id="sign-in_form" action="/sign_in">
+        <div class="input-field">
+          <input type="text" name="email" required />
+          <label for="sign-in_email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" name="password" required />
+          <label for="sign-in_password">Password</label>
+        </div>
+
+        <button type="submit" class="btn btn-light">Log in</button>
+
+        <div class="block-footer">
+          <p>Don't have an account?</p>
+          <a href="#sign-up-block" class="js-sign-change">Sign Up</a>
+        </div>
+      </form>
+
+    </div>
+    <!-- ./ sign-in_block -->
+
+    <!-- sign-up_block -->
+    <div id="sign-up_block" class="hide">
+      <a href="#" class="btn btn-blue">Sign Up With Facebook</a>
+      <a href="#" class="btn btn-red">Sign Up With Google</a>
+
+      <div class="separator">
+        <div></div>
+        <p>or</p>
+      </div>
+
+      <form id="sign-up_form" action="/sign_up">
+        <div class="input-field">
+          <input type="text" name="email" required />
+          <label for="sign-in_email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" name="password" required />
+          <label for="sign-in_password">Password</label>
+        </div>
+
+        <button type="submit" class="btn btn-light">Sign Up</button>
+
+        <div class="block-footer">
+          <p>Have an account?</p>
+          <a href="#sign-up-block" class="js-sign-change">Log In</a>
+        </div>
+      </form>
+
+    </div>
+    <!-- ./ sign-up_block -->
+
+    <!-- success_block -->
+    <div id="success_block" class="hide">
+      <div class="check animate">
+        <img src="./img/check.png" alt="">
+        <div class="check-cover"></div>
+      </div>
+      <h2>Congratulations!</h2>
+    </div>
+    <!-- ./ success_block -->
+
+  </div>
+  <!-- ./ wrapper -->
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
